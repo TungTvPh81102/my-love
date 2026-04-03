@@ -37,12 +37,12 @@ export default function SurpriseButton({ onSurprise }: SurpriseButtonProps) {
                     : "bg-gradient-to-r from-pink-400 to-rose-400 text-white shadow-rose-200 active:scale-95"
                 }`}
                 animate={!clicked ? {
-                    scale: [1, 1.03, 1],
-                    x: [0, -1.5, 1.5, -1, 1, 0] // rung nhẹ ngang
+                    scale: [1, 1.05, 1]
                 } : {}}
                 transition={{
-                    scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" },
-                    x: { duration: 0.4, repeat: Infinity, repeatDelay: 2 } // rung xong nghỉ 2s
+                    duration: 1.6,
+                    repeat: Infinity,
+                    ease: "easeInOut"
                 }}
                 whileTap={!clicked ? { scale: 0.92 } : {}}
             >

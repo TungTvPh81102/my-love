@@ -43,8 +43,7 @@ export default function Home() {
                             Dành cho {CONFIG.recipientName}
                         </motion.p>
                         <motion.h1
-                            className="text-5xl md:text-6xl font-bold text-rose-400 leading-tight"
-                            style={{ fontFamily: "'Playfair Display', serif" }}
+                            className="text-3xl md:text-6xl font-bold text-rose-400 leading-tight"
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.5, duration: 0.7 }}
@@ -90,7 +89,6 @@ export default function Home() {
                         </p>
                         <h2
                             className="text-4xl font-bold text-rose-400"
-                            style={{ fontFamily: "'Playfair Display', serif" }}
                         >
                             Hãy mở ra xem nhé~
                         </h2>
@@ -111,8 +109,7 @@ export default function Home() {
                             <span>🌸</span>
                         </div>
                         <p
-                            className="text-rose-700/80 text-[16px] font-bold leading-relaxed italic"
-                            style={{ fontFamily: "'Playfair Display', serif" }}
+                            className="text-rose-700/80 text-[14px] font-bold leading-relaxed italic"
                         >
                             "{CONFIG.cardQuote}"
                         </p>

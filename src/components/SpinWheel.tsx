@@ -8,9 +8,9 @@ import { useEffect, useRef, useState } from "react";
 const SEGMENTS = [
     { label: "Trà sữa",        emoji: "🧋", weight: 4, bg: "#fde0ec", stroke: "#f5a8c0", text: "#c0587e" },
     { label: "Trái cây",       emoji: "🍓", weight: 4, bg: "#fff0db", stroke: "#ffd49a", text: "#b87030" },
-    { label: "Thứ bạn thích",  emoji: "🎀", weight: 2, bg: "#efe0ff", stroke: "#d4aaff", text: "#7840b0" },
+    { label: "Bí mật",  emoji: "😊", weight: 2, bg: "#efe0ff", stroke: "#d4aaff", text: "#7840b0" },
     { label: "Mỹ phẩm",       emoji: "💄", weight: 3, bg: "#dcf5e0", stroke: "#a8e0b0", text: "#3a8a50" },
-    { label: "Đi chơi",        emoji: "🎡", weight: 3, bg: "#daeeff", stroke: "#a0d4ff", text: "#2870b0" },
+    { label: "Bí mật",        emoji: "😊", weight: 3, bg: "#daeeff", stroke: "#a0d4ff", text: "#2870b0" },
     { label: "Quần áo",        emoji: "👗", weight: 2, bg: "#fde8d8", stroke: "#f0c0a0", text: "#a04828" },
 ];
 // ============================================================
@@ -248,7 +248,7 @@ export default function SpinWheel() {
      `}</style>
             {/* ── Title */}
             <div style={{ textAlign: "center", animation: "fadeIn 0.6s ease" }}>
-                <div style={{ fontSize: 22, fontWeight: 800, color: "#d4739a", letterSpacing: 0.6 }}>
+                <div style={{ fontSize: 20, fontWeight: 800, color: "#d4739a", letterSpacing: 0.6 }}>
                     🎀 Phần thưởng của tình yêuuu nè
                 </div>
                 <div style={{ fontSize: 13, color: "#d4a0b5", marginTop: 5 }}>

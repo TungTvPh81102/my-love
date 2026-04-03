@@ -31,16 +31,20 @@ export default function SurpriseButton({ onSurprise }: SurpriseButtonProps) {
             <motion.button
                 onClick={handleClick}
                 disabled={clicked}
-                className={`
-         px-8 py-4 rounded-2xl font-semibold text-base transition-all duration-300
-         shadow-md
-         ${clicked
+                className={`px-8 py-4 rounded-2xl font-semibold text-base transition-all duration-300
+  ${clicked
                     ? "bg-pink-200 text-pink-400 cursor-default shadow-pink-100"
-                    : "bg-gradient-to-r from-pink-400 to-rose-400 text-white hover:from-pink-500 hover:to-rose-500 shadow-rose-200 hover:scale-105 active:scale-95"
-                }
-       `}
-                whileHover={!clicked ? { y: -2 } : {}}
-                whileTap={!clicked ? { scale: 0.96 } : {}}
+                    : "bg-gradient-to-r from-pink-400 to-rose-400 text-white shadow-rose-200 active:scale-95"
+                }`}
+                animate={!clicked ? {
+                    scale: [1, 1.03, 1],
+                    x: [0, -1.5, 1.5, -1, 1, 0] // rung nhẹ ngang
+                } : {}}
+                transition={{
+                    scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" },
+                    x: { duration: 0.4, repeat: Infinity, repeatDelay: 2 } // rung xong nghỉ 2s
+                }}
+                whileTap={!clicked ? { scale: 0.92 } : {}}
             >
                 {clicked ? "💗 Đã mở rồi nè~" : "🎁 Xem bất ngờ"}
             </motion.button>
@@ -55,7 +59,7 @@ export default function SurpriseButton({ onSurprise }: SurpriseButtonProps) {
                         transition={{ type: "spring", stiffness: 200, damping: 18 }}
                     >
                         <p
-                            className="text-rose-500 text-[16px] font-medium"
+                            className="text-rose-500 text-[16px] font-bold"
                         >
                             {SURPRISE_MESSAGE}
                         </p>

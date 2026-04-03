@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import SurpriseButton from "@/app/_components/SurpriseButton";
-import HeartAnimation from "@/app/_components/HeartAnimation";
+import SurpriseButton from "@/components/SurpriseButton";
+import HeartAnimation from "@/components/HeartAnimation";
 import { motion } from "framer-motion";
-import LoveMessage from "@/app/_components/LoveMessage";
-import SpinWheel from "@/app/_components/SpinWheel";
+import LoveMessage from "@/components/LoveMessage";
+import SpinWheel from "@/components/SpinWheel";
 // ✏️ Chỉnh thông tin cá nhân ở đây
 const CONFIG = {
     recipientName: "tình yêu của mình",

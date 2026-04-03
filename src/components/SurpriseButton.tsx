@@ -10,7 +10,7 @@ export default function SurpriseButton({ onSurprise }: SurpriseButtonProps) {
     const [clicked, setClicked] = useState(false);
     const [bgChanged, setBgChanged] = useState(false);
     const handleClick = () => {
-        if (clicked) return;
+        if (clicked) return;SURPRISE_MESSAGE
         setClicked(true);
         onSurprise(); // trigger hearts
         // Đổi background màu ấm sau chút
@@ -55,8 +55,7 @@ export default function SurpriseButton({ onSurprise }: SurpriseButtonProps) {
                         transition={{ type: "spring", stiffness: 200, damping: 18 }}
                     >
                         <p
-                            className="text-rose-500 text-lg font-medium"
-                            style={{ fontFamily: "'Playfair Display', serif" }}
+                            className="text-rose-500 text-[16px] font-medium"
                         >
                             {SURPRISE_MESSAGE}
                         </p>
